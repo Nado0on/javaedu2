@@ -4,10 +4,18 @@ import java.util.Scanner; // Import Scanner class
 
 public class Main {
     public static void main(String[] args) {
-        int qty = 50;
-        double price = 25;
         // Initializing scanner
+
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter item needed: ");
+        String item = scanner.nextLine();
+
+        System.out.println("Enter price of the item: ");
+        double price = scanner.nextDouble();
+
+        System.out.println("Enter quantity needed: ");
+        double qty = scanner.nextDouble(); // read the quantity
 
         System.out.println("Enter delivery distance: ");
         double distance = scanner.nextDouble(); // Read the distance value from user input
